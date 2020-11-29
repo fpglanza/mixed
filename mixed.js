@@ -16,7 +16,6 @@ const wierdTrioBuilder = (cartoon, history, movie) => {
 let wierdTrio = wierdTrioBuilder(cartoon, history, movie);
 
 const plotBuilder = (trio, settings, actions) => {
-  console.log(trio);
   let setting = settings[Math.floor(Math.random()*settings.length)];
   let action = actions[Math.floor(Math.random()*actions.length)];
   return ` ${trio[1]}, ${trio[2]} and ${trio[0]} are ${action} in the ${setting}`;
